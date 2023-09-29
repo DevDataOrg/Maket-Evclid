@@ -164,11 +164,14 @@ html {
 
 /*! SLIDER  */
 
-.container {
+.slider {
+    margin: 0 auto;
+    padding: 0;
     background-image: url("../img/bgslider.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    width: 1770px;
     height: 620px;
 }
 
@@ -179,7 +182,6 @@ html {
     padding-left: 80px;
     padding-right: 853px;
     padding-bottom: 24px;
-    /* font-family: Montserrat; */
     font-size: 70px;
     font-style: normal;
     font-weight: 800;
@@ -202,7 +204,7 @@ html {
     line-height: normal;
     color: #fff;
 }
-
+/* TODO: переделать на баттон */
 .slider__button {
     padding-top: 25px;
     padding-bottom: 25px;
