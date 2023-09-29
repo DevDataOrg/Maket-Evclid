@@ -1,0 +1,220 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  @font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat-Bold"),
+    url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+
+  @font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat-Regular"),
+    url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat-Medium"),
+      url("../fonts/Montserrat-Medium.woff2") format("woff2"),
+      url("../fonts/Montserrat-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat-Semibold"),
+      url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+      url("../fonts/Montserrat-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat-ExtraBold"),
+      url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"),
+      url("../fonts/Montserrat-ExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  body {
+    min-width: 1920px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+  }
+  
+  /*! global */
+  .list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .container {
+    width: 1770px;
+    padding: 0 0px;
+    margin: 0 auto;
+  }
+
+
+  /*! HEADER */
+.header {
+    margin-bottom:50px;
+}
+
+.header__container {
+    border-bottom: 1px solid #fff;
+    border-radius: 0px 0px 32px 32px;
+    background: #FFF;
+    box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.10);
+    height: 100px;
+}
+
+.header__container {
+    align-items: center;
+    /* margin-top: 14px; */
+    /* padding-top: 13.8px;
+    padding-bottom: 13.8px; */
+    /* justify-content: center; */
+    /* padding-top: 14px;
+    padding-bottom: 14px; */
+}
+
+.header__logo {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: 75px;
+    margin-right: 821px;
+    width: 225px;
+    height: 72px;
+}
+
+.nav {
+    align-items: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.nav__list {
+    padding: 0;
+    margin: 0;
+    gap: 85px;
+    margin-right: 85px;
+}
+
+.nav__link {
+    padding: 0;
+    margin: 0;
+    
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.header__search {
+    margin-right: 75px;
+    width: 24px;
+    height: 24px;
+}
+
+/*! SLIDER  */
+
+.container {
+    background-image: url("../img/bgslider.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 620px;
+}
+
+.slider__title {
+    padding: 0;
+    margin: 0;
+    padding-top: 100px;
+    padding-left: 80px;
+    padding-right: 853px;
+    padding-bottom: 24px;
+    /* font-family: Montserrat; */
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    /* letter-spacing: 0.9px; */
+    /* letter-spacing: 0.013em; */
+    /* width: 917px; */
+    color: #fff;
+}
+
+.slider__text {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 115px;
+    padding-left: 80px;
+    padding-right: 900px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #fff;
+}
+
+.slider__button {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 39px;
+    padding-right: 39px;
+    margin-left: 80px;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: #f90;
+    color: #fff;  
+}
