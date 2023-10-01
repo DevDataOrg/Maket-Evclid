@@ -167,6 +167,7 @@ html {
 .slider {
     margin: 0 auto;
     padding: 0;
+    margin-bottom: 50px;
     background-image: url("../img/bgslider.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -236,7 +237,7 @@ html {
   line-height: normal;
 }
 
-.about-us__text {
+.about-us__article {
   padding: 0;
   margin: 0;
   margin-bottom: 50px;
@@ -249,39 +250,63 @@ html {
 }
 
 .about-us__cards {
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: flex-start;
+  gap: 32px;
 }
 
 .about-us__left-card {
+  align-items: flex-end;
   border-radius: 20px;
   background-image: url("../img/manwork.jpg");
-  background-size: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 868px;
   height: 622px;
 }
 
+.about-us__left-group {
+  /* margin: 0 auto; */
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  background-color: rgba(0, 0, 0, 0.50);
+  width: 868px;
+  height: 196px;
+  /* opacity: 0.5; */
+  /* color: rgba(0, 0, 0, 0.50); */
+}
+
 .about-us__descr {
+  padding: 0;
+  margin: 0;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-right: 110px;
+  padding-bottom: 50px;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 32px; /* 200% */
   color: #FFF;
+  opacity: 1;
 }
 
 .about-us__button {
+  /* margin-right: 50px;   */
   padding: 19px 38px;
   border-radius: 16px;
   border: 3px solid #F90; 
   background-image: none; 
   background: transparent;
   background-color: transparent;
+  color: #fff;
 }
 
 .about-us__right-card {
   flex-direction: column;
+  gap: 32px;
 }
 
 .about-us__title {
