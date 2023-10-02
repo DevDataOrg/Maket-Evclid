@@ -252,6 +252,7 @@ html {
 .about-us__cards {
   justify-content: flex-start;
   gap: 32px;
+  outline: 1px solid red;
 }
 
 .about-us__left-card {
@@ -261,8 +262,10 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 868px;
+  width: calc((100% - 32px) / 2);
+  /* width: 868px; */
   height: 622px;
+  outline: 1px solid red;
 }
 
 .about-us__left-group {
@@ -272,10 +275,12 @@ html {
   border-radius: 30px;
   border: 1px solid transparent;
   background-color: rgba(0, 0, 0, 0.50);
-  width: 868px;
+  /* width: calc((100% - 32px) / 2); */
+  /* width: 868px; */
   height: 196px;
   /* opacity: 0.5; */
   /* color: rgba(0, 0, 0, 0.50); */
+  
 }
 
 .about-us__descr {
@@ -294,7 +299,7 @@ html {
 }
 
 .about-us__button {
-  /* margin-right: 50px;   */
+  margin-right: 50px;  
   padding: 19px 38px;
   border-radius: 16px;
   border: 3px solid #F90; 
@@ -307,10 +312,54 @@ html {
 .about-us__right-card {
   flex-direction: column;
   gap: 32px;
+  width: calc((100% - 32px) / 2);
+  outline: 1px solid red;
 }
 
-.about-us__title {
-  width: 450px;
+.about-us__groupe {
+  flex-direction: column;
+  outline: 1px solid red;
+  width: 620px;
+}
+
+.image-left1 {
+  padding-left: 60px;
+  padding-top: 64px;
+  padding-bottom: 65px;
+  flex-shrink: 0;
+  width: 250px;
+}
+
+.about-us__svg-img {
+  /* flex-basis: 250px; */
+  padding: 0;
+  margin: 0;
+  /* padding-left: 60px;
+  padding-top: 65px;
+  padding-right: 60px;
+  padding-bottom: 65px; */
+  box-sizing: border-box;
+  /* width: 190px; */
+  width: 100%;
+  /* height: 165px; */
+
+}
+
+.about-us__card-item {
+  /* align-items: center;
+  justify-content: center; */
+  /* outline: 1px solid red; */
+  gap: 50px;
+  border: 1px solid #cacaca;
+  border-radius: 30px;
+}
+
+.about-us__titleh3 {
+  padding: 0;
+  margin: 0;
+  padding-top: 65px;
+  margin-bottom: 8px;
+  /* width: 450px; */
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -319,11 +368,15 @@ html {
 }
 
 .about-us__text {
-  width: 450px;
+  padding: 0;
+  margin: 0;
+  padding-right: 120px;
+  /* width: 450px; */
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 32px; /* 200% */
   color: #000;
 }
+
 
