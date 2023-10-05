@@ -260,7 +260,7 @@ html {
 .slider__text {
   padding: 0;
   margin: 0;
-  margin-bottom: 115px;
+  margin-bottom: 88px;
   padding-left: 65px;
   padding-right: 900px;
   font-size: 24px;
@@ -269,18 +269,20 @@ html {
   line-height: normal;
   color: var(--color-white);
 }
-/* TODO: переделать на баттон */
+
 .slider__button {
   padding: 25px 39px;
   margin-left: 65px;
+  margin-bottom: 100px;
   border-radius: 16px;
+  border: none;
   font-size: 23px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   cursor: pointer;
-  background-color: var(--main-color);
   color: var(--color-white);
+  background-color: var(--main-color);
   transition: background-color 0.3s ease-in-out;  
 }
 
@@ -334,21 +336,23 @@ html {
 
 .about-us__left-card {
   align-items: flex-end;
+  flex: 1;
   border-radius: 20px;
   background-image: url("../img/manwork.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: calc((100% - 32px) / 2);
-  height: 622px;
+  /* max-height: 622px; */
 }
 
 .about-us__left-group {
   align-items: center;
+  flex: 1;
   justify-content: space-between;
   border-radius: 30px;
   background-color: rgba(0, 0, 0, 0.50);
-  height: 196px;  
+  /* height: 196px;   */
 }
 
 .about-us__descr {
@@ -370,8 +374,8 @@ html {
   padding: 19px 38px;
   border-radius: 16px;
   border: 3px solid var(--main-color);
-  background-color: transparent;
   color: var(--color-white);
+  background-color: transparent;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;  
 }
@@ -420,6 +424,7 @@ html {
 }
 
 .about-us__card-item {
+  flex: 1;
   gap: 50px;
   border: 1px solid var(--color-grey);
   border-radius: 30px;
@@ -467,6 +472,7 @@ html {
 
 .stages__left-group {
   flex-direction: column;
+  flex: 1;
   max-width: calc((100% - 10px) / 2);
 }
 
@@ -507,8 +513,8 @@ html {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  background-color: var(--main-color);
   color: var(--color-white);
+  background-color: var(--main-color);
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;    
 }
@@ -535,8 +541,8 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  background-color: transparent;
   color: var(--color-black);
+  background-color: transparent;
   cursor: pointer;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;     
 }
@@ -562,18 +568,20 @@ html {
   background-color: var(--color-black);
 }
 
-.stages__right-group{
+.stages__right-group {
+  flex: 1;
   background-position: right 10px;
   border-radius: 20px;
   background-image: url("../img/stages.jpg");
   background-repeat: no-repeat;
   background-size: 870px 460px;
+  /* background-size: cover; */
   min-width: 895px;
 }
 
 /*! questions */
 
-.question_title {
+.question__title {
   padding: 0;
   margin: 0;
   margin-bottom: 32px;
@@ -624,7 +632,7 @@ html {
 
 .footer {
   background: var(--color-black);
-  height: 594px;
+  min-height: 594px;
 }
 
 .footer__group {
@@ -635,7 +643,7 @@ html {
 .footer__logo {
   padding: 0;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
   display: inline-block;
 }
 
@@ -680,6 +688,7 @@ html {
 
 .footer__social-links {
   gap: 25px;
+  flex-wrap: wrap;
 }
 
 .footer__social-link-ok {
@@ -732,13 +741,13 @@ html {
 
 .footer__midle-group {
   flex-direction: column;
-  margin-right: 190px;
+  margin-right: 191px;
 }
 
 .midle-group__title {
   padding: 0;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
@@ -746,7 +755,7 @@ html {
   color: var(--color-grey);
 }
 
-.midle-group_form {
+.midle-group__form {
   flex-direction: column;
 }
 
@@ -767,8 +776,8 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
-  background-color: #414141;
   color: var(--color-grey);
+  background-color: #414141;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -833,8 +842,8 @@ html {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  background-color: var(--main-color);
   color: var(--color-white);
+  background-color: var(--main-color);
   cursor: pointer;  
   transition: background-color 0.3s ease-in-out;
 }
@@ -855,63 +864,55 @@ html {
 
 /*! Check-box */
 
-.check {
-  align-items: center;
-  padding-left: 42px;
+.check__input {
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
+.custom-checkbox {
+  position: relative;
+  padding-left: 41px;
   color: var(--color-grey);
 }
 
-.check__input {
+.custom-checkbox span::before {
+  content: "";
   position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-}
-
-.check__box {
-  position: absolute;
-  margin-left: -19px;
+  left: 22px;
+  top: 50%;
+  transform: translateY(-50%);
   width: 14px;
   height: 14px;
-  overflow: hidden;
-  border-radius: 0.05em;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-color: var(--color-grey);
+  border: 1px solid var(--color-grey);
 }
 
-/* Checked */
-
-.check__input:checked + .check__box {
-  background-color: var(--color-grey);
+.custom-checkbox span::after {
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
   background-image: url("../img/check.svg");
+  opacity: 0;
 }
 
-/* Focused */
-
-/* .check__input:focus + .check__box {
-  box-shadow:
-      0 0 0 0.1em #4A90E2,
-      0 0 0 0.2em #7ED321;
-} */
-
-/* Disabled */
-
-/* .check__input:disabled + .check__box {
-  box-shadow: 0 0 0 0.1em #9B9B9B;
+.custom-checkbox input:checked + span::after {
+  opacity: 1;
 }
-
-.check__input:checked:disabled + .check__box {
-  background-color: #9B9B9B;
-} */
 
 .footer__descr {
   padding: 0;
   margin: 0;
   padding-top: 88px;
-  /* padding-right: 45px; */
-  padding-left: 48px;
+  padding-bottom: 10px;
+  padding-left: 47px;
   width: 410px;
   font-size: 16px;
   font-style: normal;

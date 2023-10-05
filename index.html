@@ -49,7 +49,8 @@
                 <p class="slider__text">
                     Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
                 </p>
-                <a class="slider__button" href="">Заказать расчёт</a>
+                <!-- <a class="slider__button" href="">Заказать расчёт</a> -->
+                <button class="slider__button">Заказать расчёт</button>
             </div>
         </section>
 
@@ -136,8 +137,9 @@
                     <div class="stages__left-group flex">
                         <h3 class="stages__subtitle">Проводим консультацию</h3>
                         <p class="stages__descr">
-                            Влечёт за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. <br> 
-А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
+                            <span>Влечёт за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. <br></span>
+                            <span>А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</span>
+
                         </p>
                         <div class="stages__buttons-group flex">
                             <button class="stages__btn">Подробнее</button>
@@ -155,7 +157,7 @@
         <!--! question -->
         <section class="questions">
             <div class="container">
-                <h2 class="question_title">Вопросы</h2>
+                <h2 class="question__title">Вопросы</h2>
                 <ul class="question__list list-reset flex">
                     <li class="question__item flex">
                         <h3 class="question__subtitle">
@@ -233,26 +235,26 @@
                             </svg>
 
                         </a>
+                        
                     </div>
                 </div>
                 <div class="footer__midle-group flex">
                     <h3 class="midle-group__title">Оставить заявку</h3>
-                    <form class="form midle-group_form flex" action="https://jsonplaceholder.typicode.com/posts" method="POST" >
+                    <form class="form midle-group__form flex" action="https://jsonplaceholder.typicode.com/posts" method="POST" >
                         <div class="form__label flex">
                             <input class="form__input" type="text" id="name" name="name" value="Фамилия, имя и отчество*" required/>
                             <input class="form__input" type="email" id="email" name="email" value="Email*" required/>
                             <textarea class="form__text-area" name="textarea" rows="5" cols="20">Сообщение</textarea>
                         </div>
+                        <div class="midle-group__send-post flex">
+                            <button class="footer__btn">Отправить данные</button>
+                            <label class="custom-checkbox">
+                                <input class="check__input visually-hidden" type="checkbox" checked="checked" name="gender">
+                                <span>Согласен на обработку данных</span>
+                              </label>                        
+                        </div>
                     </form>
-                    <div class="midle-group__send-post flex">
-                        <button class="footer__btn">Отправить данные</button>
-                        <label class="check option flex">
-                            <!--TODO: checked="" disabled="" -->
-                            <input class="check__input" type="checkbox" > 
-                            <span class="check__box"></span>
-                            Согласен на обработку данных
-                        </label>
-                    </div>
+                    
                     
 
                 </div>
