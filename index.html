@@ -185,7 +185,7 @@
   <!--! footer -->
 
   <footer class="footer" id="footer">
-    <div class="container">
+    <div class="container footer__container">
       <div class="footer__group flex">
         <div class="footer__left-group flex">
           <a class="footer__logo" href="#">
@@ -218,7 +218,7 @@
           </nav>
           <ul class="footer__social-links flex">
             <li class="list-reset">
-              <a class="footer__social-link-ok" href="#">
+              <a class="footer__social-link-ok footer__social-link" href="#">
                 <svg class="footer__img" width="60" height="60" viewBox="0 0 60 60" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -231,7 +231,7 @@
               </a>
             </li>
             <li class="list-reset">
-              <a class="footer__social-link-vk" href="#">
+              <a class="footer__social-link-vk footer__social-link" href="#">
                 <svg class="footer__img" width="60" height="60" viewBox="0 0 60 60" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -242,34 +242,37 @@
             </li>
           </ul>
         </div>
-        <div class="footer__midle-group flex">
-          <h3 class="midle-group__title">Оставить заявку</h3>
-          <form class="form midle-group__form flex" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-            <div class="form__label flex">
-              <input class="form__input" type="text" id="name" name="name" placeholder="Фамилия, имя и отчество*"
-                required>
-              <input class="form__input" type="email" id="email" name="email" placeholder="Email*" required>
-              <textarea class="form__text-area" name="textarea" rows="5" cols="20" placeholder="Сообщение"></textarea>
-            </div>
-            <div class="midle-group__send-post flex">
-              <button class="footer__btn">Отправить данные</button>
-
-              <label class="form__label-checked flex">
-                <input class="checkbox" type="checkbox" checked="checked">
-                <span class="checkbox-text">Согласен на обработку данных</span>
-              </label>
-            </div>
-          </form>
+        <div class="footer__mid-right-group flex">
+          <div class="footer__midle-group flex">
+            <h3 class="midle-group__title">Оставить заявку</h3>
+            <form class="form midle-group__form flex" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+              <div class="form__label flex">
+                <input class="form__input" type="text" id="name" name="name" placeholder="Фамилия, имя и отчество*"
+                  required>
+                <input class="form__input" type="email" id="email" name="email" placeholder="Email*" required>
+                <textarea class="form__text-area" name="textarea" rows="5" cols="20" placeholder="Сообщение"></textarea>
+              </div>
+              <div class="midle-group__send-post flex">
+                <button class="footer__btn">Отправить данные</button>
+  
+                <label class="form__label-checked flex">
+                  <input class="checkbox" type="checkbox" checked="checked">
+                  <span class="checkbox-text">Согласен на обработку данных</span>
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="footer__right-group flex">
+            <p class="footer__descr">
+              Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта:
+              разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким
+              образом, консультация
+              с широким активом обеспечивает широкому кругу (специалистов) участие
+              в формировании стандартных подходов.
+            </p>
+          </div>
         </div>
-        <div class="footer__right-group flex">
-          <p class="footer__descr">
-            Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта:
-            разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким
-            образом, консультация
-            с широким активом обеспечивает широкому кругу (специалистов) участие
-            в формировании стандартных подходов.
-          </p>
-        </div>
+        
       </div>
     </div>
   </footer>
