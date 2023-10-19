@@ -275,6 +275,8 @@ body {
   margin: 0 auto;
   padding: 0;
   margin-bottom: 51px;
+  border-radius: 32px;
+  background-position: center;
   background-image: url("../img/bgslider.jpg");
   background-size: cover;
   background-repeat: no-repeat;
