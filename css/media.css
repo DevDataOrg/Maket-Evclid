@@ -170,7 +170,6 @@
   .checkbox-text::after {
     top: 9px;
   }
-
 }
 
 @media (max-width: 950px) {
@@ -294,7 +293,6 @@
   .footer__container {
     padding-bottom: 47px;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -343,7 +341,6 @@
   .about-us__left-group {
     flex-direction: column;
   }
-
 }
 @media (max-width: 576px) {
   .container {
@@ -582,5 +579,4 @@
   .footer__social-links {
     gap: 15px;
   }
-
 }
