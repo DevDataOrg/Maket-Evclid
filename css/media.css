@@ -235,6 +235,10 @@
     max-width: 370px;
   }
 
+  .stages {
+    margin-bottom: 78px;
+  }
+
   .stages__group {
     flex-direction: column-reverse;
     gap: 39px;
@@ -295,7 +299,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .header__container {
     flex-wrap: wrap;
     gap: 19px;
@@ -341,6 +345,8 @@
   .about-us__left-group {
     flex-direction: column;
   }
+
+
 }
 @media (max-width: 576px) {
   .container {
@@ -362,7 +368,13 @@
   }
 
   .slider__container {
-    padding: 60px 10px 59px 10px;
+    padding: 60px 10px 59px 12px;
+    border-radius: 16px;
+    background-position: center;
+    background-image: url("../img/slider-320.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 290px;
   }
 
   .slider {
@@ -399,6 +411,7 @@
     width: 100%;
     min-height: 200px;
     background-image: url(../img/manwork-320.jpg);
+    background-repeat: no-repeat;
     margin-bottom: 8px;
   }
 
@@ -417,16 +430,20 @@
   }
 
   .about-us__button {
-    color: var(--main-color);
-    padding: 9px 31px;
+    padding: 11px 42px;
     border-width: 2px;
     border-radius: 10px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--main-color);
   }
 
   .about-us__card-item {
     padding: 0;
     flex-direction: column;
-    gap: 5px;
+    gap: 3px;
     border: none;
   }
 
@@ -509,7 +526,7 @@
   }
 
   .question__subtitle {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     font-size: 18px;
     font-weight: 500;
   }
@@ -520,7 +537,7 @@
   }
 
   .question__container {
-    padding-bottom: 57px;
+    padding-bottom: 58px;
   }
 
   .midle-group__title {
